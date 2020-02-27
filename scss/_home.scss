@@ -1,0 +1,596 @@
+/* Start About Area css
+============================================================================================ */
+
+.about-area {
+    .main-title {
+        color: yellow;
+        margin-bottom: 30px;
+        h1 {
+            font-family: "Gugi";
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            &:before {
+                left: 10%;
+                @media (max-width: 1200px) {
+                    left: 12%;
+                }
+                @media (max-width: 991px) {
+                    left: 8%;
+                }
+                @media (max-width: 767px) {
+                    left: 10%;
+                }
+            }
+            &:after {
+                left: 5px;
+            }
+        }
+        @media (max-width: 1024px) {
+            padding-bottom: 0px;
+        }
+    }
+    .about-left {
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+    .primary-btn {
+      background-image: linear-gradient(to right, #42275a 0%, #734b6d 51%, #42275a 100%);
+        margin-top: 40px;
+        color: yellow;
+    }
+
+     .primary-btn:hover{
+         background-position: right center;
+     }
+
+    .img-fluid{
+        width: 25rem;
+    }
+}
+
+.p_120 {
+  padding-top: 120px;
+  padding-bottom: 120px; 
+}
+
+.mytabs_area {
+  background-image: linear-gradient(to left, rgba(255, 255, 0, 1.0), rgba(67, 0, 95, 1.0)); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+
+.tabs_inner{
+	.nav.nav-tabs{
+		display: block;
+		text-align: center;
+		border: none;
+		margin-bottom: 120px;
+		li{
+			display: inline-block;
+			margin-right: 8px;
+			a{
+				margin: 0px;
+				line-height: 50px;
+				border-radius: 5px;
+				padding: 0px 40px;
+				font-size: 13px;
+				font-weight: 800;
+				color: #fff;
+				font-family: "Gugi";
+                text-transform: uppercase;
+				border: 2px solid #fff;
+				background: rgba(255, 255, 255, .1);
+				&.active{
+					background: yellow;
+					color: black;
+				}
+			}
+		}
+	}
+	.tab-content{
+		.tab-pane{
+			.list{
+				max-width: 460px;
+				margin: auto;
+				position: relative;
+				padding-top: 40px;
+				padding-bottom: 60px;
+				&:before{
+					content: "";
+					height: 100%;
+					width: 5px;
+					background: #43005f;
+					position: absolute;
+					left: 46%;
+					transform: translateX(-50%);
+					top: -5px;
+				}
+				li{
+					margin-bottom: 60px;
+					position: relative;
+					span{
+						height: 15px;
+						width: 15px;
+						border-radius: 50%;
+						display: block;
+						background: yellow;
+						position: absolute;
+						left: 46%;
+						top: 30px;
+						transform: translateX(-50%);
+						&:before{
+							content: '';
+							height: 7px;
+							width: 7px;
+							background: #43005f;
+							border-radius: 50%;
+							position: absolute;
+							left: 52%;
+							top: 4px;
+							transform: translateX(-50%);
+						}
+					}
+					&:last-child{
+						margin-bottom: 0px;
+					}
+					.media{
+						.d-flex{
+							padding-right: 100px;
+							p{
+								color: rgb(255, 255, 255);
+                                font-weight: 1000;
+								margin-bottom: 0px;
+								padding-top: 20px;
+							}
+						}
+						.media-body{
+							h4{
+								color: #fff;
+								font-size: 21px;
+								text-transform: uppercase;
+								margin-bottom: 20px;
+							}
+							p{
+								color: rgba(255, 255, 255, .75);
+								margin-bottom: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* End About Area css
+============================================================================================ */
+
+/* Start Testimonial Area css
+============================================================================================ */
+
+.testimonial_area {
+    background: url(../img/testi-bg.jpg) no-repeat center;
+    @media (max-width: 991px) {
+        background-image: none;
+        .testimonial-img {
+            display: none;
+        }
+    }
+    .testimonial_logos {
+        background: #fff;
+        padding: 80px 50px;
+        box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+        img {
+            cursor: pointer;
+        }
+        .top_logos {
+            img:last-child {
+                float: right;
+            }
+        }
+        .mid_logo {
+            margin: 85px 0;
+            text-align: center;
+        }
+        .bottom_logos {
+            img:last-child {
+                float: right;
+            }
+        }
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+    .active_testimonial {
+        .owl-dots {
+            background: $primary-color;
+            height: 25px;
+            width: 100px;
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            border-radius: 50px;
+            @media (max-width: 991px) {
+                left: 50%;
+                @include transform(translateX(-50%));
+            }
+            .owl-dot {
+                height: 15px;
+                width: 15px;
+                background: #ec887f;
+                margin: 5px;
+                border-radius: 50%;
+                margin-top: 5px;
+                display: inline-block;
+                &.active {
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.single_testimonial {
+    @media (max-width: 991px) {
+        text-align: center;
+    }
+    .testimonial_head {
+        text-align: left;
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+        img {
+            margin-bottom: 30px;
+            width: auto;
+            @media (max-width: 991px) {
+                margin: 0 auto 30px;
+            }
+        }
+        h4 {
+            margin-bottom: 10px;
+            color: #000;
+            font-size: 21px;
+        }
+        .review {
+            i.fa {
+                color: #ffc000;
+            }
+        }
+    }
+    .testimonial_content {
+        margin-top: 30px;
+        p {
+            font-size: 24px;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 40px;
+            line-height: 36px;
+            padding-right: 35px;
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/* End Testimonial Area css
+============================================================================================ */
+
+/* Start Newsletter Area css
+============================================================================================ */
+
+.newsletter-area {
+    background-image: url(../img/newsletter-bg.jpg);
+    background-size: cover;
+    .main-title {
+        h1 {
+            color: #fff;
+            &:before {
+                background: #fff;
+            }
+            &:after {
+                background: #fff;
+            }
+        }
+        p {
+            color: #fff;
+        }
+    }
+}
+
+.newsletter_form {
+    .navbar-form {
+        width: 100%;
+        background: #fff;
+        border-radius: 50px;
+        .form-control {
+            border: none;
+            font-size: 13px;
+            background: transparent;
+            color: #000;
+            padding: 0 20px;
+            height: 50px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        input {
+            @include placeholder {
+                font-size: 12px;
+                color: #999999;
+                text-transform: uppercase;
+            }
+        }
+        .add-on {
+            border-radius: 50px;
+            border: 1px solid transparent;
+            height: 50px;
+        }
+        .genric-btn {
+            color: #22195e;
+            border: none;
+            border-radius: 50px;
+            height: 40px;
+            line-height: 40px;
+            margin: 4px;
+            font-weight: 500;
+            text-transform: uppercase;
+            background: $primary-color2;
+            &:hover {
+                background-color: $primary-color;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+/* End Newsletter Area css
+============================================================================================ */
+
+/* line 2, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion button {
+  font-size: 16px;
+  color: #0f2137;
+  font-weight: 500;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  /* line 2, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+  #accordion button {
+    font-size: 14px;
+  }
+}
+
+/* line 11, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion .card {
+  margin-bottom: 15px;
+  border-radius: 0;
+  border-radius: 0 !important;
+  margin-bottom: 30px;
+}
+
+/* line 16, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion .card .card-header {
+  background-color: transparent;
+  padding: 4px 14px;
+}
+
+@media (max-width: 767px) {
+  /* line 16, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+  #accordion .card .card-header {
+    padding: 4px 0;
+  }
+}
+
+/* line 23, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion .card .card-body {
+  font-size: 16px;
+  line-height: 28px;
+  color: #888888;
+  padding: 10px 30px 32px;
+}
+
+/* line 29, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion .card .collapse {
+  border-bottom: 1px solid #d7dbe3;
+}
+
+/* line 31, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion .card .collapse.show {
+  border-bottom: 1px solid transparent;
+}
+
+/* line 39, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion h5 {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 65, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion h5 button.btn.btn-link:after {
+  position: absolute;
+  content: "\e648";
+  top: 9px;
+  right: 12px;
+  height: auto;
+  font-family: 'themify';
+  color: #0f2137;
+  font-size: 14px;
+  left: -24px;
+}
+
+@media (max-width: 767px) {
+  /* line 65, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+  #accordion h5 button.btn.btn-link:after {
+    right: 10px;
+  }
+}
+
+/* line 81, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion h5 button.btn.btn-link.collapsed:after {
+  content: "\e64b";
+  color: #0f2137;
+  font-size: 14px;
+}
+
+/* line 88, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion h5 button i {
+  height: 36px;
+  width: 36px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  margin-right: 20px;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+  /* line 88, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+  #accordion h5 button i {
+    display: none;
+  }
+}
+
+/* line 104, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion h5 button.btn.btn-link.collapsed i {
+  background: #f4f7f9;
+  color: #0f2137;
+}
+
+@media (max-width: 767px) {
+  /* line 104, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+  #accordion h5 button.btn.btn-link.collapsed i {
+    display: none;
+  }
+}
+
+/* line 116, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion .btn-link:hover {
+  color: #182028;
+  text-decoration: none;
+}
+
+/* line 120, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion.scss */
+#accordion .btn {
+  text-align: left !important;
+}
+
+/* line 1, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area {
+    background: url(../img/testi-bg.jpg) no-repeat center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 4, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area .accordion_thumb {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* line 7, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area .accordion_thumb img {
+  width: 100%;
+}
+
+/* line 12, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area .faq_ask h3 {
+  font-size: 46px;
+  font-family: "Gugi";
+  font-weight: 300;
+  color: #001D38;
+  margin-bottom: 57px;
+}
+
+@media (max-width: 767px) {
+  /* line 12, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+  .accordion_area .faq_ask h3 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 12, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+  .accordion_area .faq_ask h3 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}
+
+/* line 29, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area .faq_ask #accordion .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #43005f;
+  background-clip: border-box;
+  border: none;
+  border-radius: .25rem;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 46, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area .faq_ask #accordion .card .card-header {
+  background-color: transparent;
+  padding: 4px 14px;
+  border: none;
+}
+
+/* line 51, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area .faq_ask #accordion button {
+  font-size: 17px;
+  color: #fff !important;
+  font-weight: 200 !important;
+}
+
+@media (max-width: 767px) {
+  /* line 55, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+  .accordion_area .faq_ask #accordion button span {
+    display: none;
+  }
+}
+
+/* line 61, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area .faq_ask #accordion .card .card-header {
+  background-color: transparent;
+  padding: 4px 30px;
+}
+
+/* line 75, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area .faq_ask #accordion .card .card-body {
+  font-size: 17px;
+  line-height: 28px;
+  color: yellow;
+  padding: 10px 30px 32px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* line 85, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_accordion_area.scss */
+.accordion_area .faq_ask #accordion .btn-link.focus, .accordion_area .faq_ask #accordion .btn-link:focus {
+  text-decoration: none;
+  border-color: transparent;
+  box-shadow: none;
+}
